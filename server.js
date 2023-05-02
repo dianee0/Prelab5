@@ -6,10 +6,9 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World! Welcome to Node.js!');
+  res.end('Hello World! Welcome to Node.js');
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-// close the 'server' task with CTRL + C
